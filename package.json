@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy": "ng build --base-href=/test-angular-renderer2/",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist/test-angular-renderer2/"
+    "predeploy": "ng build --base-href=/test-angular-routing/",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist/test-angular-routing/"
   },
   "private": true,
   "dependencies": {
