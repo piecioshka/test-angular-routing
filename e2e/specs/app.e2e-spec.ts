@@ -1,7 +1,7 @@
-import { AppPage } from './app.po';
+import { AppPage } from "../page-objects/app.po";
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let page: AppPage = null;
 
   beforeEach(() => {
     page = new AppPage();
@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to test-angular-routing!');
+    expect(page.getTitleText()).toEqual('Routing in #Angular');
   });
 });
