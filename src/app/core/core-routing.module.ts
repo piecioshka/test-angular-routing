@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PageGalleryComponent } from './components/page-gallery/page-gallery.component';
-import { PageAuthorsComponent } from './components/page-authors/page-authors.component';
+import { PageGalleryComponent } from './pages/page-gallery/page-gallery.component';
+import { PageAuthorsComponent } from './pages/page-authors/page-authors.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'ga',
-    pathMatch: 'prefix', // Default: "prefix"
+    pathMatch: 'prefix', // Default
     redirectTo: '/gallery'
   },
   {
@@ -20,8 +21,17 @@ const routes: Routes = [
     component: PageGalleryComponent
   },
   {
+    path: 'a',
+    pathMatch: 'prefix', // Default
+    redirectTo: '/authors'
+  },
+  {
     path: 'authors',
     component: PageAuthorsComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
@@ -31,4 +41,4 @@ const routes: Routes = [
   })],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class CoreRoutingModule { }
