@@ -4,4 +4,4 @@
 
 ## Demo 🎉
 
-* <https://piecioshka.github.io/test-angular-routing/>
+<https://piecioshka.github.io/test-angular-routing/>
