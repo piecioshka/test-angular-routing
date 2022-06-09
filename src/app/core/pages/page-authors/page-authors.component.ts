@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-page-authors',
-  templateUrl: './page-authors.component.html',
-  styleUrls: ['./page-authors.component.css']
+  selector: "app-page-authors",
+  templateUrl: "./page-authors.component.html",
+  styleUrls: ["./page-authors.component.css"],
 })
 export class PageAuthorsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,24 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { CoreRoutingModule } from './core-routing.module';
-import { AppComponent } from './components/app/app.component';
-import { PageGalleryComponent } from './pages/page-gallery/page-gallery.component';
-import { PageAuthorsComponent } from './pages/page-authors/page-authors.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { CoreRoutingModule } from "./core-routing.module";
+import { AppComponent } from "./components/app/app.component";
+import { PageGalleryComponent } from "./pages/page-gallery/page-gallery.component";
+import { PageAuthorsComponent } from "./pages/page-authors/page-authors.component";
+import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     PageGalleryComponent,
     PageAuthorsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    CoreRoutingModule
-  ],
+  imports: [BrowserModule, CoreRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class CoreModule { }
+export class CoreModule {}

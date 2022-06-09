@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { PageGalleryComponent } from './page-gallery.component';
+import { PageGalleryComponent } from "./page-gallery.component";
 
-describe('PageGalleryComponent', () => {
+describe("PageGalleryComponent", () => {
   let component: PageGalleryComponent;
   let fixture: ComponentFixture<PageGalleryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageGalleryComponent ]
-    })
-    .compileComponents();
+      declarations: [PageGalleryComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('PageGalleryComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
