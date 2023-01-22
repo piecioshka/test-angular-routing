@@ -2,6 +2,6 @@
 
 :ledger: Testing routing in Angular app.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-routing/>
